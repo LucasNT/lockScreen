@@ -1,0 +1,1 @@
+This project is a simple wrapper over swaylock, currently, it only prevents simultaneos running of the lock, but in the future it will have the possibility to select a random image from a folder in the a XDG_DIRECTORY, as a background for the lock screen.
