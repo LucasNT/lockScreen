@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-set -x
 
 if ! command -v swaylock > /dev/null 2>&1
 then
@@ -22,6 +21,6 @@ fi
         IMAGE="-i '$IMAGE_FOLDER/$(ls -1 "$IMAGE_FOLDER" | sort -R  | head -n1)'"
     fi
 
-    swaylock -c "$(printf "%x" $COLOR)" $IMAGE
+    swaylock -c "$(printf "%x" $COLOR)" $IMAGE -F --indicator-radius 100
 
 ) 200>/tmp/lockScreen.lock
